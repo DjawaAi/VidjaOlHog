@@ -33,4 +33,13 @@ public class Gryffindor extends Hogwarts {
     public void setNobility(int nobility) {
         this.nobility = nobility;
     }
+
+    @Override
+    public String toString() {
+        return "Gryffindor{" +
+                "благородство =" + nobility +
+                ", честь =" + honor +
+                ", храбрость =" + bravery +
+                '}';
+    }
 }
