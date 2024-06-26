@@ -1,17 +1,27 @@
 public class Slytherin extends Hogwarts {
+    private Pupil pupil;
     private int cunning;
     private int determination;
     private int ambition;
     private int resourcefulness;
     private int thirstForPower;
 
-    public Slytherin(int powerOfMagic, int transgressionDistance, int cunning, int determination, int ambition, int resourcefulness, int thirstForPower) {
+    public Slytherin(int powerOfMagic, int transgressionDistance, Pupil pupil, int cunning, int determination, int ambition, int resourcefulness, int thirstForPower) {
         super(powerOfMagic, transgressionDistance);
+        this.pupil = pupil;
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
         this.resourcefulness = resourcefulness;
         this.thirstForPower = thirstForPower;
+    }
+
+    public Pupil getPupil() {
+        return pupil;
+    }
+
+    public void setPupil(Pupil pupil) {
+        this.pupil = pupil;
     }
 
     public int getCunning() {
@@ -57,11 +67,14 @@ public class Slytherin extends Hogwarts {
     @Override
     public String toString() {
         return "Slytherin{" +
-                "хитрость =" + cunning +
-                ", решительность =" + determination +
-                ", амбициозность =" + ambition +
-                ", находчивость =" + resourcefulness +
-                ",  жажда власти =" + thirstForPower +
+                " Магическая сила = " + getPowerOfMagic() +
+                ", Расстояние трансгрессии = " + getPowerOfMagic() +
+                ", " + pupil +
+                ", хитрость = " + cunning +
+                ", решительность = " + determination +
+                ", амбициозность = " + ambition +
+                ", находчивость = " + resourcefulness +
+                ", жажда власти = " + thirstForPower +
                 '}';
     }
 }

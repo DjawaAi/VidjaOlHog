@@ -1,13 +1,23 @@
-public class Gryffindor extends Hogwarts {
+public class Gryffindor extends Hogwarts{
+    private Pupil pupil;
     private int nobility;
     private int honor;
     private int bravery;
 
-    public Gryffindor(int powerOfMagic, int transgressionDistance, int bravery, int honor, int nobility) {
+    public Gryffindor(int powerOfMagic, int transgressionDistance, Pupil pupil, int nobility, int honor, int bravery) {
         super(powerOfMagic, transgressionDistance);
-        this.bravery = bravery;
-        this.honor = honor;
+        this.pupil = pupil;
         this.nobility = nobility;
+        this.honor = honor;
+        this.bravery = bravery;
+    }
+
+    public Pupil getPupil() {
+        return pupil;
+    }
+
+    public void setPupil(Pupil pupil) {
+        this.pupil = pupil;
     }
 
     public int getBravery() {
@@ -34,12 +44,14 @@ public class Gryffindor extends Hogwarts {
         this.nobility = nobility;
     }
 
-    @Override
     public String toString() {
-        return "Gryffindor{" +
-                "благородство =" + nobility +
-                ", честь =" + honor +
-                ", храбрость =" + bravery +
+        return "Gryffindor {" +
+                " Магическая сила = " + getPowerOfMagic() +
+                ", Расстояние трансгрессии = " + getPowerOfMagic() +
+                ", " + pupil +
+                ", благородство = " + nobility +
+                ", честь = " + honor +
+                ", храбрость = " + bravery +
                 '}';
     }
 }
