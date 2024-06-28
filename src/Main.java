@@ -48,6 +48,6 @@ public class Main {
         cmpStdOfFcl.compare(ravenclaw, 2);
         System.out.println();
         CompareStudents compareStudents = new CompareStudents();
-        compareStudents.cmpStudents(gryffindor, puffenduy, slytherin, ravenclaw, 5, 0);
+        compareStudents.cmpStudents(slytherin[1], ravenclaw[1]);
     }
 }

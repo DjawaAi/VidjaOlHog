@@ -25,10 +25,7 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return "Hogwarts{" +
-                "магическая сила = " + powerOfMagic +
-                ", расстояние трансгрессии =" + transgressionDistance +
-                '}';
+        return "магическая сила = " + powerOfMagic +
+                ", расстояние трансгрессии =" + transgressionDistance;
     }
 }
-

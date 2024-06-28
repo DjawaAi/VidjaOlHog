@@ -5,7 +5,13 @@ public class Ravenclaw extends Hogwarts {
     private int witty;
     private int creativity;
 
-    public Ravenclaw(int powerOfMagic, int transgressionDistance, Pupil pupil, int smart, int wise, int witty, int creativity) {
+    public Ravenclaw(int powerOfMagic,
+                     int transgressionDistance,
+                     Pupil pupil,
+                     int smart,
+                     int wise,
+                     int witty,
+                     int creativity) {
         super(powerOfMagic, transgressionDistance);
         this.pupil = pupil;
         this.smart = smart;
@@ -56,9 +62,8 @@ public class Ravenclaw extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Ravenclaw{" +
-                " Магическая сила = " + getPowerOfMagic() +
-                ", Расстояние трансгрессии = " + getPowerOfMagic() +
+        return "Ravenclaw { " +
+                super.toString() +
                 ", " + pupil +
                 ", ум = " + smart +
                 ", мудрость = " + wise +

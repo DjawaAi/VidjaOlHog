@@ -6,7 +6,14 @@ public class Slytherin extends Hogwarts {
     private int resourcefulness;
     private int thirstForPower;
 
-    public Slytherin(int powerOfMagic, int transgressionDistance, Pupil pupil, int cunning, int determination, int ambition, int resourcefulness, int thirstForPower) {
+    public Slytherin(int powerOfMagic,
+                     int transgressionDistance,
+                     Pupil pupil,
+                     int cunning,
+                     int determination,
+                     int ambition,
+                     int resourcefulness,
+                     int thirstForPower) {
         super(powerOfMagic, transgressionDistance);
         this.pupil = pupil;
         this.cunning = cunning;
@@ -66,9 +73,8 @@ public class Slytherin extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Slytherin{" +
-                " Магическая сила = " + getPowerOfMagic() +
-                ", Расстояние трансгрессии = " + getPowerOfMagic() +
+        return "Slytherin { " +
+                super.toString() +
                 ", " + pupil +
                 ", хитрость = " + cunning +
                 ", решительность = " + determination +

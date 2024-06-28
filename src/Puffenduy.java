@@ -4,7 +4,12 @@ public class Puffenduy extends Hogwarts {
     private int loyal;
     private int honest;
 
-    public Puffenduy(int powerOfMagic, int transgressionDistance, Pupil pupil, int hardworking, int loyal, int honest) {
+    public Puffenduy(int powerOfMagic,
+                     int transgressionDistance,
+                     Pupil pupil,
+                     int hardworking,
+                     int loyal,
+                     int honest) {
         super(powerOfMagic, transgressionDistance);
         this.pupil = pupil;
         this.hardworking = hardworking;
@@ -45,9 +50,8 @@ public class Puffenduy extends Hogwarts {
     }
 
     public String toString() {
-        return "Puffenduy {" +
-                " Магическая сила = " + getPowerOfMagic() +
-                ", Расстояние трансгрессии = " + getPowerOfMagic() +
+        return "Puffenduy { " +
+                super.toString() +
                 ", " + pupil +
                 ", трудолюбие = " + hardworking +
                 ", верность = " + loyal +
