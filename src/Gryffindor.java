@@ -58,5 +58,4 @@ public class Gryffindor extends Hogwarts{
                 ", храбрость = " + bravery +
                 '}';
     }
-
 }
